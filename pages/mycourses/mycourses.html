@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Courses</title>
+    <link rel="stylesheet" href="mycourses.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <img src="images/logo.png"  class="logo">
+
+    <div class="aside">  
+        <a href="../home/home.html" ><i class="fas fa-home"></i></a>
+        <a href="#" style="border-bottom: 2px solid white;"><i class="fas fa-book"></i></a>
+        <a href="../profile/profile.html"><i class="fas fa-user"></i></a>
+    </div>
+
+    <header>
+        <img src="images/logo.png" alt="logo"> 
+        <nav>  
+            <a href="../home/home.html" id="pages"><i class="fas fa-home"></i> Home</a>
+            <a href="#" id="page"><i class="fas fa-book"></i> Courses</a>
+            <a href="../profile/profile.html"><i class="fas fa-user"></i> Profile</a>
+        </nav>
+    </header>   
+
+
+    <main>
+        <div class="mainmenu">
+            <section class="section" id="course1">
+                <h2 onclick="toggleLectureList('course1')">Basketball Basics</h2>
+                <div id="lecture-list-course1" class="lecture-list">
+                    <div class="lecture-list-item">Заголовок</div>
+                    <div class="lecture-list-item">Основы баскетбола</div>
+                    <div class="lecture-list-item">Основные правила</div>
+                    <div class="lecture-list-item">Второстипеннеы правила</div>
+                </div>
+                <button id="start-button" onclick="startCourse()">Начать</button>
+            </section>
+            
+            <section class="section" id="course2">
+                <h2 onclick="toggleLectureList('course2')">Dribbling</h2>
+                <div id="lecture-list-course2" class="lecture-list">
+                    <div class="lecture-list-item">Заголовок</div>
+                    <div class="lecture-list-item">Основы баскетбола</div>
+                    <div class="lecture-list-item">Основные правила</div>
+                    <div class="lecture-list-item">Второстипеннеы правила</div>
+                </div>
+                <button id="start-button" onclick="startCourse()">Начать</button>
+            </section>
+            
+            <section class="section" id="course3">
+                <h2 onclick="toggleLectureList('course3')">Throwing Technique</h2>
+                <div id="lecture-list-course3" class="lecture-list">
+                    <div class="lecture-list-item">Заголовок</div>
+                    <div class="lecture-list-item">Основы баскетбола</div>
+                    <div class="lecture-list-item">Основные правила</div>
+                    <div class="lecture-list-item">Второстипеннеы правила</div>
+                </div>
+                <button id="start-button" onclick="startCourse()">Начать</button>
+            </section>
+            
+            <section class="section" id="course4">
+                <h2 onclick="toggleLectureList('course4')">Teamwork</h2>
+                <div id="lecture-list-course4" class="lecture-list">
+                    <div class="lecture-list-item">Заголовок</div>
+                    <div class="lecture-list-item">Основы баскетбола</div>
+                    <div class="lecture-list-item">Основные правила</div>
+                    <div class="lecture-list-item">Второстипеннеы правила</div>
+                </div>
+                <button id="start-button" onclick="startCourse()">Начать</button>
+            </section>
+            
+            <section class="section" id="course5">
+                <h2 onclick="toggleLectureList('course5')">Professional game</h2>
+                <div id="lecture-list-course5" class="lecture-list">
+                    <div class="lecture-list-item">Заголовок</div>
+                    <div class="lecture-list-item">Основы баскетбола</div>
+                    <div class="lecture-list-item">Основные правила</div>
+                    <div class="lecture-list-item">Второстипеннеы правила</div>
+                </div>
+                <button id="start-button" onclick="startCourse()">Начать</button>
+            </section> 
+        </div>
+
+
+        <img src="https://www.dynamiksportsfloors.co.uk/content/uploads/2022/08/3x3-Court-design-747x560.png" alt="">
+
+        <div class="player">
+            <i class="fas fa-user" id="p1" onmouseover="highlightSections(1)" onmouseout="resetHighlight()"><a href="">  Разыгрывающий защитник</a></i>
+            <i class="fas fa-user" id="p2" onmouseover="highlightSections(2)" onmouseout="resetHighlight()"><a href="">  Атакующий защитник</a></i>
+            <i class="fas fa-user" id="p3" onmouseover="highlightSections(3)" onmouseout="resetHighlight()"><a href=""><br>  Легкий форфарт</a></i>
+            <i class="fas fa-user" id="p4" onmouseover="highlightSections(4)" onmouseout="resetHighlight()"><a href="">  Тяжелый форфард</a></i>
+            <i class="fas fa-user" id="p5" onmouseover="highlightSections(5)" onmouseout="resetHighlight()"><a href="">  Центровой</a></i>
+        </div>
+    </main>
+
+
+    <script src="mycourses.js"></script>
+</body>
+</html>

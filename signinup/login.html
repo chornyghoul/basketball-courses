@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-../pages/home/images/red.jpg=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <title>LogIn</title>
+</head>
+<body>
+    <video autoplay muted loop class="background-video">
+        <source src="image/on.mp4" type="video/mp4">
+    </video>
+
+
+    <div class="loginbox">       
+        <section>
+            <form id="loginForm">
+                <h1>Log in<b>.</b></h1>
+                <p>Still not a member? <a href="signup.html">Sign up</a></p>
+                <br>
+                <input type="email" id="email" placeholder="Enter your e-mail address" required>
+                <br><br>
+                <input type="password" id="password" placeholder="Enter your password" minlength="8" required>
+                <br>
+                <div class="other">
+                    <button type="button" class="twitch" onclick="window.location.href='https://www.twitch.tv/login?client_id=w9ijym53prw034v1trby017out42ic&redirect_params=client_id%3Dw9ijym53prw034v1trby017out42ic%26redirect_uri%3Dhttps%253A%252F%252Fslay-award.ru%252Ftwitch%252Flogin%26response_type%3Dcode%26scope%3Duser%253Aread%253Aemail%26state%3De253cf0a-7812-4feb-b57f-5b165ec3d1e8'">
+                        <i class="fab fa-twitch"></i>
+                    </button>
+                    <button type="button" class="google" onclick="window.location.href='pages/menu.html'">
+                        <i class="fab fa-google"></i>
+                    </button>                      
+                </div>
+                <div class="login">
+                    <input type="submit" value="Log in account">
+                </div>
+                <p class="error" id="errorMsg" style="color: red; margin-top: 10px;"></p>
+            </form>
+        </section>
+    </div>
+</body>
+<script src="login.js"></script>
+</html>
