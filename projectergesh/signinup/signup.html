@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <title>Create New Account</title>
+</head>
+<body>
+    <video autoplay muted loop class="background-video">
+        <source src="image/purple.mp4" type="video/mp4">
+    </video>
+
+    <div class="signupbox">
+        <section>
+            <form id="signupForm">
+                <h1>Create new account<b>.</b></h1>
+                <p>Already A Member? <a href="login.html">Login</a></p>
+                
+                <input type="tel" id="tel" placeholder="Напишите номер телефона" required>
+                <br><p>or</p><br>
+
+
+                <input type="email" id="email" placeholder="Enter your e-mail address" required>
+                <div class="other">
+                    <button type="button" class="google" onclick="window.location.href='pages/menu.html'">
+                        <i class="fab fa-google"></i>
+                    </button>                      
+                </div>
+                
+                <br>
+                <br>               
+                
+                <div class="register">
+                    <input type="submit" value="Create account">
+                </div>
+            </form>
+        </section>
+    </div>
+</body>
+<script src="signup.js"></script>
+</html>
